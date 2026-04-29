@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Sansi Yomba">
+<meta name="description" content="Sansi Soccer Training images page showcasing soccer training photos, player development sessions, footwork drills, skill training, and elite coaching moments.">    
+<title>Images</title>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+.container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#galleryImage {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.slideshow-buttons {
+    margin-top: 20px;
+}
+
+.slideshow-buttons button {
+    padding: 10px 25px;
+    margin: 10px;
+    font-size: 18px;
+    background-color: gold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.slideshow-buttons button:hover {
+    background-color: white;
+}
+
+.links {
+    margin-top: 30px;
+}
+
+.links a {
+    color: gold;
+    margin: 0 15px;
+    font-size: 20px;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Training Images</h1>
+
+<img id="galleryImage"
+     src="Images/sansi1.jpg"
+     alt="Gallery image"
+     onclick="openFullscreen()">
+
+<div class="slideshow-buttons">
+    <button onclick="previousImage()">◀ Previous</button>
+    <button onclick="nextImage()">Next ▶</button>
+</div>
+
+<div class="links">
+    <a href="media1.html">← Back to Media</a>
+    <a href="index.html">← Back to Home</a>
+</div>
+
+</div>
+
+<script>
+var images = [
+    "Images/sansi1.jpg",
+    "Images/IMG_0177.jpeg",
+    "Images/IMG_6610.jpeg",
+    "Images/IMG_6611.jpeg",
+    "Images/IMG_6612.jpeg",
+    "Images/IMG_6613.jpeg",
+    "Images/IMG_6614.jpeg"
+];
+
+var currentImage = 0;
+
+function showImage() {
+    document.getElementById("galleryImage").src = images[currentImage];
+}
+
+function nextImage() {
+    currentImage++;
+    if (currentImage >= images.length) {
+        currentImage = 0;
+    }
+    showImage();
+}
+
+function previousImage() {
+    currentImage--;
+    if (currentImage < 0) {
+        currentImage = images.length - 1;
+    }
+    showImage();
+}
+
+function openFullscreen() {
+    var img = document.getElementById("galleryImage");
+
+    if (img.requestFullscreen) {
+        img.requestFullscreen();
+    } else if (img.webkitRequestFullscreen) {
+        img.webkitRequestFullscreen();
+    } else if (img.msRequestFullscreen) {
+        img.msRequestFullscreen();
+    }
+}
+</script>
+
+</body>
+</html>

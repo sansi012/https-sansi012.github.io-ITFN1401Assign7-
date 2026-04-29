@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Sansi Yomba">
+<meta name="description" content="Sansi Soccer Training media page featuring soccer training photos, practice videos, elite player sessions, youth development, and technical soccer instruction.">    
+<title>Media</title>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    color: gold;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.media-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.media-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.4s;
+}
+
+.media-card:hover {
+    transform: scale(1.05);
+}
+
+.media-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.media-card a {
+    text-decoration: none;
+}
+
+.media-card h2 {
+    color: white;
+}
+
+.media-card p {
+    color: gold;
+    font-size: 18px;
+}
+
+.back {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back a {
+    color: gold;
+    font-size: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>Media Page</h1>
+
+<p class="intro">
+Take A Deep Dive into The Sessions Of The Elite
+</p>
+
+<div class="media-grid">
+
+    <!-- Images Card -->
+    <div class="media-card">
+        <a href="images.html">
+            <img src="Images/sansi1.jpg" alt="Images">
+            <h2>Images</h2>
+            <p>Explore elite training photos and moments.</p>
+        </a>
+    </div>
+
+    <!-- Videos Card -->
+    <div class="media-card">
+        <a href="videos.html">
+            <img src="Images/IMG_0177.jpeg" alt="Videos">
+            <h2>Videos</h2>
+            <p>Watch intense training sessions.</p>
+        </a>
+    </div>
+
+</div>
+
+<div class="back">
+<a href="index.html">← Back to Home</a>
+</div>
+
+</div>
+</body>
+</html>
