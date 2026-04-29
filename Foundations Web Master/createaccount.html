@@ -1,0 +1,127 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>
+Create Account
+</title>
+
+<style>
+
+
+form {
+  max-width: 600px;
+  margin: auto;
+}
+
+fieldset {
+  border: 2px solid gold;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+legend {
+  color: white;
+  font-size: 22px;
+}
+
+label {
+  color: white;
+  font-size: 18px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+
+input[type="submit"] {
+  background-color: gold;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background-color: white;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Create Your Box 2 Box Account</h1>
+
+<form>
+
+<fieldset>
+<legend>Personal Information</legend>
+
+<label for="name">Full Name:</label><br>
+<input type="text" id="name" name="name"><br><br>
+
+<label for="email">Email:</label><br>
+<input type="text" id="email" name="email"><br><br>
+
+<label for="password">Password:</label><br>
+<input type="password" id="password" name="password"><br><br>
+
+</fieldset>
+
+<fieldset>
+<legend>Contact Information</legend>
+
+<label for="phone">Phone Number:</label><br>
+<input type="text" id="phone" name="phone"><br><br>
+
+<label for="address">Address:</label><br>
+<input type="text" id="address" name="address"><br><br>
+
+<label for="city">City:</label><br>
+<input type="text" id="city" name="city"><br><br>
+
+</fieldset>
+
+<fieldset>
+<legend>Training Preferences</legend>
+
+<label for="position">Preferred Position:</label><br>
+<select id="position" name="position">
+<option>Midfielder</option>
+<option>Defender</option>
+<option>Forward</option>
+<option>Goalkeeper</option>
+</select><br><br>
+
+
+</fieldset>
+
+<fieldset>
+<legend>Club Information</legend>
+
+<label for="clublevel">Club Level:</label><br>
+<input type="text" id="clublevel" name="clublevel"><br><br>
+
+<label for="clubteam">Club Team:</label><br>
+<input type="text" id="clubteam" name="clubteam"><br><br>
+
+<label for="clubcoach">Club Coach:</label><br>
+<input type="text" id="clubcoach" name="clubcoach"><br><br>
+
+</fieldset>
+
+<input type="submit" value="Create Account">
+
+</form>
+
+<p><a href="index.html">Back to Home</a></p>
+</body>
+</html>

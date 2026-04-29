@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Sansi Yomba">
+<meta name="description" content="Sansi Soccer Training videos page featuring soccer drills, technical skills sessions, youth training videos, ball control exercises, and advanced player development.">    
+<title>Training Videos</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+
+<style>
+.container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+video {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+/* Buttons */
+.video-buttons {
+    margin-top: 15px;
+}
+
+.video-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: gold;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.video-buttons button:hover {
+    background-color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Training Videos</h1>
+
+<video id="trainingVideo" controls>
+    <source src="Videos/IMG_4770.MOV" type="video/mp4">
+</video>
+
+<div class="video-buttons">
+    <button onclick="previousVideo()">◀ Back</button>
+    <button onclick="nextVideo()">Next ▶</button>
+</div>
+
+<p><a href="media1.html">← Back to Media</a></p>
+
+</div>
+
+</body>
+</html>
